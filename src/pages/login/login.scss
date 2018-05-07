@@ -1,0 +1,58 @@
+.page-login {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.item-md {
+    background-color : map-get($colors, dark);
+    color: map-get($colors, dark);
+}
+
+.item-ios {
+    background-color : map-get($colors, dark);
+    color: map-get($colors, dark);
+}
+
+.item-wp {
+    background-color : map-get($colors, dark);
+    color: map-get($colors, dark);
+}
+
+.label-md[stacked], .label-md[floating] {
+    color: map-get($colors, light);
+}
+
+.label-ios[stacked], .label-ios[floating] {
+    color: map-get($colors, light);
+}
+
+.label-wp[stacked], .label-ios[floating] {
+    color: map-get($colors, light);
+}
+
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: map-get($colors, primary);
+}
+
+.toolbar-title-ios {
+    padding: 0 12px;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: map-get($colors, primary);
+}
+
+.toolbar-title-wp {
+    padding: 0 12px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: map-get($colors, primary);
+}

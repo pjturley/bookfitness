@@ -1,0 +1,8 @@
+.page-register {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}

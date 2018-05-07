@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Classes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-schedule">
+  <div style="height:5px;"></div>
+  <!--img src="assets/imgs/Bootcamp.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" /-->
+  <!--div class="spacer" style="width:300px;height:31px;" id="classes-spacer3"></div-->
+  <!--ion-list-->
+  <!--ion-row>
+        <ion-col col-4> 
+            <button left ion-button small>
+                <b><<April</b>
+              </button>
+        </ion-col>
+        <ion-col col-4> 
+        </ion-col>
+        <ion-col col-4> 
+            <button right ion-button small>
+                <b>June>></b>
+              </button>
+        </ion-col>
+  </ion-row-->
+  <span *ngFor="let classes of (class | async)?.items">
+    <ion-list-header>
+        {{ classes.title}}
+    </ion-list-header>
+
+    <div *ngFor="let class1 of classes['nodes']" >
+      <ion-list >
+        <ion-item>
+          <h2>{{class1.class_time}}</h2>
+          <h3>{{class1.class}}</h3>
+          <p>{{class1.trainer}}</p>
+          <button ion-button clear item-end>Book</button>
+        </ion-item>
+      </ion-list>
+      <!--h2>
+            {{class1.Class}}
+        </h2-->
+    </div>
+      <!--ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/Bootcamp.png">
+        </ion-avatar>
+        <h2>Finn</h2>
+        <h3>I'm a big deal</h3>
+        <p>Listen, I've had a pretty messed up day...</p>
+      </ion-item-->
+
+        <!--ion-row>
+            <ion-col col-12> 
+                <ion-item>{{ classes.class_date}}</ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-4> 
+                <ion-item>{{ classes.class_time}}</ion-item>
+            </ion-col>
+            <ion-col col-8--> 
+                <!--img src="assets/imgs/{{ classes.class_img}}" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;"/-->
+                <!--ion-item>{{ classes.class_description}}<br>{{ classes.trainer}}</ion-item>
+            </ion-col>
+        </ion-row-->
+        <!--ion-row>
+            <ion-col col-3>
+              <button ion-button small>
+                <b>Book Class</b>
+              </button>
+            </ion-col>
+        </ion-row-->
+        <!--ion-item>
+            <ion-item>{{ classes.class_date }}</ion-item>
+            <button ion-button (click)="register()">Book Class</button>
+          </ion-item-->
+      <!--ion-item>
+        {{ classes.class_date }}
+      </ion-item>
+      <button ion-button (click)="register()">
+        Book Class
+      </button!-->
+  </span>
+      <!--button ion-item *ngFor="let classes of (classes | async)?.items" (click)="openDetails(film)">
+      {{ classes.class_date }}
+    </button-->
+  <!--/ion-list-->
+</ion-content>

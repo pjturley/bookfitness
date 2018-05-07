@@ -1,0 +1,8 @@
+{
+  "name": "bookFitness",
+  "app_id": "00c55c8b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="page-home">
+  <div class="spacer" style="width:300px;height:25px;"></div>
+  <img src="assets/imgs/bookfitness.png" style="display:block;width:25%;height:auto;margin-left:auto;margin-right:auto;" />
+  <div class="spacer" style="width:300px;height:25px;"></div>
+  <ion-title>Bookfitness</ion-title>
+  <div class="spacer" style="width:300px;height:50px;"></div>
+    <div>
+      <p>
+        Welcome back Paul
+      </p>
+    </div>
+    <div class="spacer" style="width:300px;height:25px;" id="myProfile-spacer2"></div>
+    <div id="myProfile-markdown5" class="show-list-numbers-and-dots">
+      <p>
+        Last Class: 17/03/2018 09:00
+      </p>
+      <p>
+        Next Class: None Scheduled
+      </p>
+    </div>
+</ion-content>
+<ion-footer>
+    <button ion-button block (click)="schedule()">
+      Book Class
+    </button>
+</ion-footer>

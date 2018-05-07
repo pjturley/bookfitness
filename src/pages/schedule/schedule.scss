@@ -1,0 +1,35 @@
+.page-schedule {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+.toolbar-title {
+    color: map-get($colors, primary);
+    font-size: 1.5em;
+}
+
+.label {
+    font-size: small;
+}
+
+.title {
+    font-size: small;
+}
+
+.item p {
+    color: map-get($colors, light);
+}
+
+.list-header {
+    border-top-color: map-get($colors, primary);
+    border-top-width: 1px;
+}
+
+.list {
+    border-top-color: map-get($colors, primary);
+    border-top-width: 1px;
+}

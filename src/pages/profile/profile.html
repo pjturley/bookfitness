@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="bctoolbar-title">Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-about" padding>
+  <!--img src="assets/imgs/bookfitness.png" style="display:block;width:25%;height:auto;margin-left:40%;margin-right:auto;" />
+  <div class="spacer" style="width:300px;height:40px;" id="myProfile-spacer1"></div!-->
+  <img src="assets/imgs/ninja.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+   <div item-divider positive-bg light>
+    <div style="height:10px;"></div>
+    <ion-title>Paul Turley </ion-title>
+    <div style="height:15px;"></div>
+    <ion-segment [(ngModel)]="profile">
+        <ion-segment-button value="profileDetails">
+          Profile Details
+        </ion-segment-button>
+        <ion-segment-button value="membershipDetails">
+          Membership Details
+        </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="profile">
+        <div style="height:5px;"></div>
+        <div class="myBorder" *ngSwitchCase="'profileDetails'">
+            <p>
+              Username: PJTURLEY@MAC.COM
+            </p>
+            <p>
+              Name: Paul Turley
+            </p>
+            <p>
+              Email: pjturley@mac.com
+            </p>
+            <p>
+              DOB: 23/09/1969
+            </p>
+            <p>
+              Gender: Male
+            </p>
+            <p>
+                Mobile Number: 07970809068
+            </p>
+          </div>
+      
+        <div class="myBorder" *ngSwitchCase="'membershipDetails'">
+            <p>
+                Direct Debit: Yes
+              </p>
+              <p>
+                Bootcamp Membership: 10 Sessions
+              </p>
+              <p>
+                Bootcamp Sessions: 43 Available
+              </p>
+              <p>
+                Last Class: 17/03/2018 09:00
+              </p>
+              <p>
+                Next Class: None Scheduled
+              </p>
+        </div>
+    </div>
+  </div> 
+  <ion-footer>
+      <button ion-button block (click)="logout()">
+        Logout
+      </button>
+    </ion-footer>
+</ion-content>

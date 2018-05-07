@@ -1,0 +1,33 @@
+.page-about {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+    //font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //font-size: medium;
+    //padding-left: 20em;
+}
+
+.myBorder1 {
+    border-color: map-get($colors, primary);
+    border-width: 1px;
+    border-style: solid;
+    padding: 1em;
+}
+
+.myBorder {
+    padding: 1em;
+}
+
+.segment-wp .segment-button.segment-activated {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, dark);
+}
+
+.segment-wp .segment-button {
+    color: map-get($colors, primary);
+}
+
+.segment-md1 .segment-button.segment-activated {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, dark);
+}

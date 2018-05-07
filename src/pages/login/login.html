@@ -1,0 +1,28 @@
+<ion-header>
+  <div class="spacer" style="width:300px;height:25px;"></div>
+  <img src="assets/imgs/bookfitness.png" style="display:block;width:25%;height:auto;margin-left:40%;margin-right:auto;" />
+  <div class="spacer" style="width:300px;height:25px;"></div>
+  <ion-title>Bookfitness</ion-title>
+</ion-header>
+<ion-content padding class="page-login">
+  <!--img ion-right src="assets/imgs/fitbox.png"/-->
+  <p style="font-size:small">Welcome to the Bookfitness app, please login with your details below or click the Register button to join.</p>
+  <form (submit)="doLogin()">
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input [(ngModel)]="loginData.password" name="password" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <button ion-button block type="submit">
+        Login
+    </button>
+  </form>
+  <ion-footer>
+      <button ion-button block clear (click)="register()">
+          Register
+      </button>
+  </ion-footer>
+</ion-content>
